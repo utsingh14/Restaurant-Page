@@ -1,0 +1,68 @@
+/* utkarsh's css reset */
+*,
+*::before,
+*::after {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    font-size: inherit;
+}
+
+/* remove blocky display of button */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* code */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    gap: 5vw;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    padding: 16px;
+    bottom: 0;
+    width: 100%;
+}
+
+header,
+footer {
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
