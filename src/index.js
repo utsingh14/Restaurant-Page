@@ -1,29 +1,33 @@
 import "./style.css";
 import { renderHome } from "./home";
 import { renderMenu } from "./menu";
+import { renderAboutUs } from "./about-us";
+import { renderContactUs } from "./contact-us";
 
-console.log("HELLO! World");
+const home = document.querySelector("#home");
+const logo = document.querySelector("#logo");
+const menu = document.querySelector("#menu");
+const about = document.querySelector("#about-us");
+const contact = document.querySelector("#contact-us");
 
-const home=document.querySelector("#home");
-const logo=document.querySelector("#logo");
-const menu=document.querySelector("#menu");
-
-
-home.addEventListener('click',()=>{
-    home.style.textDecoration = 'none';
-    menu.style.textDecoration = 'none';
-    home.style.textDecoration = 'underline';
-    renderHome();
+home.addEventListener("click", () => {
+  renderHome();
 });
-logo.addEventListener('click',()=>{
-    menu.style.textDecoration = 'none';
-    home.style.textDecoration = 'none';
-    home.style.textDecoration = 'underline';
-    renderHome();
+
+logo.addEventListener("click", () => {
+  renderHome();
 });
-menu.addEventListener('click',()=>{
-    home.style.textDecoration = 'none';
-    menu.style.textDecoration = 'underline';
-    renderMenu();
+
+menu.addEventListener("click", () => {
+  renderMenu();
 });
+
+about.addEventListener("click", () => {
+  renderAboutUs();
+});
+
+contact.addEventListener("click", () => {
+  renderContactUs();
+});
+
 renderHome();

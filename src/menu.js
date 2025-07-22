@@ -1,8 +1,9 @@
-export function renderMenu() {
-    // menu 
-    // const home = document.querySelector("#home");
-    // home.style.textDecoration = 'underline';
+import { reset } from "./reset";
 
-    const container = document.querySelector("#container");
-    container.innerHTML="";
+export function renderMenu() {
+  reset();
+
+  // menu
+  const menu = document.querySelector("#menu");
+  menu.style.textDecoration = "underline";
 }

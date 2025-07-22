@@ -1,12 +1,12 @@
 import "./home.css";
+import { reset } from "./reset";
 
 export function renderHome() {
+  reset();
+
   // home
   const home = document.querySelector("#home");
   home.style.textDecoration = "underline";
-
-  const container = document.querySelector("#container");
-  container.innerHTML = "";
 
   // create tag line segment
   const tagLine = document.createElement("div");
