@@ -1,0 +1,26 @@
+#story-container {
+  background-image: url("./assets/about-us.avif");
+  /* background-image: url("./assets/home-3.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#story {
+  /* text-align: center; */
+  margin: 10vw;
+  padding: 7vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background-color: white;
+  width: 50vw;
+  border-radius: 25px;
+}
+#memories {
+  display: grid;
+}

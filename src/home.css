@@ -1,78 +1,119 @@
 #container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #tag-line {
-    font-size: 3.5vw;
-    background-image: url("./assets/restaurant.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
+  font-size: 3.5vw;
+  background-image: url("./assets/restaurant.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 #line {
-    background-color: whitesmoke;
-
+  background-color: whitesmoke;
 }
 
-#our-story {
-    /* text-align: center; */
-    padding: 10vw;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+#our-services {
+  display: grid;
+  padding: 2vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  gap: 1vw;
+  background-color: rgb(239, 235, 235);
+}
+#our-services > h1 {
+  grid-area: 1/1/2/4;
+}
+.delivery,
+.take-away,
+.dinning,
+#our-services > h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.delivery,
+.take-away,
+.dinning {
+  background-color: snow;
+  border-radius: 25px;
+  padding: 1vw;
+}
+.delivery:hover,
+.take-away:hover,
+.dinning:hover {
+  border-radius: 250px;
+}
+
+.delivery-icon,
+.dinning-icon,
+.take-away-icon {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 10vw;
+  width: 10vw;
+}
+.delivery-icon {
+  background-image: url("./assets/delivery.png");
+}
+.dinning-icon {
+  background-image: url("./assets/dinning.png");
+}
+.take-away-icon {
+  background-image: url("./assets/take-away.png");
 }
 
 #home-collage {
-    padding: 5vw;
-    box-sizing: border-box;
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
-    /* grid-template-rows: 1fr 1fr;
+  padding: 5vw;
+  box-sizing: border-box;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  /* grid-template-rows: 1fr 1fr;
     grid-template-rows: auto auto; */
 }
 
-
 #home4 {
-    grid-area: 2/2/3/3;
-    background-image: url("./assets/home-4.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  grid-area: 2/2/3/3;
+  background-image: url("./assets/home-4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #home3 {
-    grid-area: 1/1/3/2;
-    background-image: url("./assets/home-3.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  grid-area: 1/1/3/2;
+  background-image: url("./assets/home-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #home2 {
-    grid-area: 1/2/2/4;
-    background-image: url("./assets/home-2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  grid-area: 1/2/2/4;
+  background-image: url("./assets/home-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #home5 {
-    grid-area: 2/3/3/4;
-    background-image: url("./assets/home-5.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  grid-area: 2/3/3/4;
+  background-image: url("./assets/home-5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #testimonials {
   padding: 5vw;
@@ -90,7 +131,7 @@
 
 #testimonials h2 {
   font-style: normal;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   font-weight: bold;
   margin-bottom: 10px;
   text-align: center;
