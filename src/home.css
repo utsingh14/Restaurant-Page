@@ -23,20 +23,21 @@
 
 #our-services {
   display: grid;
-  padding: 2vw;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  padding: max(20px, 2vw);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-content: center;
   align-items: center;
-  gap: 1vw;
+  gap: max(20px, 2vw);
   background-color: rgb(239, 235, 235);
 }
-#our-services > h1 {
-  grid-area: 1/1/2/4;
+
+#our-services > * {
+  padding: 20px;
 }
 .delivery,
 .take-away,
 .dinning,
-#our-services > h1 {
+#our-services > div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +47,7 @@
 .dinning {
   background-color: snow;
   border-radius: 25px;
-  padding: 1vw;
+  /* padding: 1vw; */
 }
 .delivery:hover,
 .take-away:hover,
@@ -54,15 +55,6 @@
   border-radius: 250px;
 }
 
-.delivery-icon,
-.dinning-icon,
-.take-away-icon {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 10vw;
-  width: 10vw;
-}
 .delivery-icon {
   background-image: url("./assets/delivery.png");
 }

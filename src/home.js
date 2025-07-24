@@ -27,17 +27,19 @@ export function renderHome() {
   const services = document.createElement("div");
   services.id = "our-services";
   services.innerHTML = `
-      <h1>Our Services</h1>
+      <div class="grid-header">
+        <h1>Our Services</h1>
+      </div>
       <div class="dinning">
-        <div class="dinning-icon"></div>
+        <div class="dinning-icon large-icon"></div>
         <h2>Dinning</h2>
         </div>
       <div class="take-away">
-        <div class="take-away-icon"></div>
+        <div class="take-away-icon large-icon"></div>
         <h2>Take Away</h2>
       </div>
       <div class="delivery">
-        <div class="delivery-icon"></div>
+        <div class="delivery-icon large-icon"></div>
         <h2>Delivery</h2>
       </div>
   `;

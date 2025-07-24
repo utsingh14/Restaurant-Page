@@ -85,6 +85,13 @@ li {
   height: 100px;
   width: 100px;
 }
+.large-icon {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 180px;
+  width: 180px;
+}
 .small-icon {
   background-size: cover;
   background-position: center;
