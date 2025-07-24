@@ -37,8 +37,10 @@ export function renderAboutUs() {
   storyContainer.appendChild(story);
   container.appendChild(storyContainer);
 
+  /** below code is under initially development stages kindly ignore */
+
   // memories
-  const memories = document.createElement("div");
-  memories.id = "memories";
-  story.appendChild(memories);
+  // const memories = document.createElement("div");
+  // memories.id = "memories";
+  // story.appendChild(memories);
 }

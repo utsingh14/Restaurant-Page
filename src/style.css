@@ -65,3 +65,30 @@ footer {
   background-color: whitesmoke;
   border-radius: 10px;
 }
+li {
+  list-style: none;
+}
+
+/* utkarsh's custome classes */
+.grid-header {
+  grid-area: 1/1/2/-1;
+}
+
+.grid-footer {
+  grid-column: 1/-1;
+}
+
+.icon {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+}
+.small-icon {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px;
+}
