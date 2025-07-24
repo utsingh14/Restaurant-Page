@@ -24,3 +24,8 @@
 #memories {
   display: grid;
 }
+@media (max-width: 520px) {
+  #story {
+    width: 90vw;
+  }
+}

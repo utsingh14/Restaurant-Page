@@ -5,7 +5,7 @@
 }
 
 #tag-line {
-  font-size: 3.5vw;
+  font-size: max(3.5vw, 32px);
   background-image: url("./assets/restaurant.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -145,4 +145,6 @@
   font-weight: bold;
   text-align: right;
   color: #7a5c3e;
+}
+@media (max-width: 520px) {
 }

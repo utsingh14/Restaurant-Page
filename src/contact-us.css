@@ -5,6 +5,7 @@
   background-image: url("./assets/home-3.jpg");
   padding: 10vw;
   padding-top: 5vw;
+  text-align: center;
 
   display: flex;
   align-items: center;
@@ -67,4 +68,13 @@
 .instagram {
   background-image: url("./assets/icon/instagram.png");
   display: inline-block;
+}
+@media (max-width: 520px) {
+  .contact-section > .grid-footer > ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-section > *:hover {
+    border-radius: 50px;
+  }
 }
